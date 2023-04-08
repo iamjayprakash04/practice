@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        header{
+            
+            /* position: fixed; */
+            /* z-index: 1; */
+            position: sticky;
+           top: 20px;
+        }
+        nav{
+            background-color: brown;
+            height: 10vh;
+            width: 100vw;
+        }
+        ul li{
+             display: inline-block;
+             
+            }
+            .parent{
+            height: 2000vh;
+            width: 40vw;
+            margin: auto;
+            border: 5px dashed blue;
+        }
+        .child{
+            border: 2px solid blue;
+            background-color: red;
+            position:relative;
+            width: 10vw;
+            height: 10vh;
+            /* z-index: 0; */
+            top: -20px;
+
+         }10   </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contacts</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+
+</body>
+
+</html>

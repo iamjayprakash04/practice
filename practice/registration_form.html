@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER</title>
+    <style>
+        * {
+            margin: 10px;
+            padding: 0;
+        }
+
+        input {
+            /* display: inline-block; */
+            /* word-spacing: 20px; */
+            margin-left: 20px;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            word-spacing: 10 vw;
+            border: 2px solid rgba(151, 18, 18, 0.837);
+            width: 50vw;
+            height: 50vh;
+
+        }
+        .nav{
+            height: 10vh;
+            color: white;
+            background: rgba(164, 12, 65, 0.83);
+        }
+       li, a{
+            display: inline;
+            color: white;
+            word-spacing: 200px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer">Home</a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer">Services</a></li>
+            <li><a href="http://" target="_blank" rel="noopener noreferrer">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <label for="Name">Name : <input type="text" name="Name"><br>
+                <label for="Email">Email : </label> <input type="email" name="Email"><br>
+                <label for="Password">Password : </label> <input type="password" name="password"><br>
+                <label for="Phone">Phone no. : </label> <input type="number" name="phone"><br>
+                <label for="gender">
+                    gender :
+                </label>
+                <input type="radio" name="gender">male
+                <input type="radio" name="gender">female<br>
+                <label for="language">language : </label>
+                <select name="language">language :
+                    <option value="hindi">hindi</option>
+                    <option value="english">english</option>
+                </select><br>
+                <label for="zip">Zip code : </label> <input type="number" name="zip"><br>
+                <label for="about">About : </label> <input type="tel" name="" id=""><br>
+                <button value="submit">submit</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
