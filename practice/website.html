@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARATA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        header::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color:black ;
+            position: absolute;
+            top: 0px;
+            opacity: 0.2;
+          
+            z-index: -1;
+        }
+        header {
+            color: white;
+            border: 2px solid black;
+            height: 15vh;
+            position: sticky;
+            top: 0;
+            
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left {
+            /* border: 2px solid yellow; */
+            position: relative;
+            top: 20px;
+            left: 72px;
+            text-align: center;
+            /* box-sizing: content-box; */
+            height: 16vh;
+        }
+
+        .left p {
+            color: grey;
+        }
+
+        .mid {
+            margin: 20px;
+            /* border: 2px solid rebeccapurple; */
+            width: 50%;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        ul li {
+            display: inline-block;
+            margin: 20px 5px;
+
+        }
+
+        ul li a {
+            color: white;
+            margin: 0px auto;
+            text-decoration: none;
+        }
+        
+        .right {
+            /* border: 2px solid black; */
+            /* border: 2px solid yellow; */
+            position: relative;
+            top: 20px;
+            right: 72px;
+            text-align: center;
+            height: 30px;
+            padding: 10px 15px;
+            /* border-radius: 20px; */
+            cursor: pointer;
+        }
+        
+        .right a {
+            color: white;
+            /* color: black; */
+            text-decoration: none;
+            border: 2px solid black;
+        }
+        a{
+            padding: 12px;
+            width: auto;
+            transition: all 0.25s ease-in-out ;
+            /* transition: all 0.25s ease-in-out 2ms; */
+            /* transition: property duration timing-function  delay ; */
+        }
+        a:hover{
+            text-decoration: underline;
+            background: rgba(128, 128, 128, 0.733);
+            color: white;
+            padding: 15px;
+            border: 2px solid black;
+            /* border-radius: 200px; */
+        }
+        body{
+
+            background-color: black;
+        }
+        .main::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            /* background-color: red; */
+            background: url('bg.jpeg');
+            /* background: url('elon.jpeg'); */
+            position: absolute;
+            top: 0px;
+            z-index: -1;
+            opacity: 0.7;
+            background-size:cover;
+            background-repeat: no-repeat;
+        }
+        .main{
+            height: 80vh;
+   
+        }
+        .main .home-content{
+          
+            margin: 100px auto;
+            margin-bottom: 0;
+            color: white;
+            width: 80vw;
+            text-align: center;
+        }
+        .main .home-content p{
+            margin: 20px;
+        }
+        .services{
+            margin:auto;
+            
+            width:100;
+            height: 40vh;
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <h1>ARATA</h1>
+                <p id="myP">ARCHITECTURE</p>
+            </div>
+            <div class="mid">
+                <div class="menu" onclick="fun()">
+
+                <ul id="ul">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">PROJECTS</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">PAGES</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+
+            </div>
+        </div>
+            <div class="right"><a href="">GET IN TOUCH</a></div>
+        </nav>
+    </header>
+    <main class="main">
+
+        <div class="home-content">
+            <h1>WELCOME TO MYONLINE SERVICE</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem explicabo eius aut non, nulla voluptates consequuntur deleniti quod optio tenetur, quos autem earum perferendis ab quam facere amet officia.</p>
+        </div>
+    </main>
+    <div class="services">
+        <h1>WELCOME TO MYONLINE SERVICE</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem explicabo eius aut non, nulla voluptates consequuntur deleniti quod optio tenetur, quos autem earum perferendis ab quam facere amet officia.</p>
+    </div>
+
+</body>
+
+</html>

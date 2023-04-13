@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <style>
+        .box{
+            width: 50vw;
+            height:80vh;
+            margin: auto;
+            border: 2px solid yellow;
+            background-color: black;
+            
+        }
+        .bulb{
+            width: 200px;
+            height: 200px;
+            border: 20px double black;
+            border-radius: 80px 80px 150px 150px;
+            margin: 100px auto;
+            background-color: yellow;
+            /* box-sizing: border-box; */
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            z-index: 1;
+        }
+        .round{
+            width: 30px;
+            height: 30px;
+            background-color: black;
+        border: 5px dotted yellow;
+            border-radius: 150px;
+            position: absolute;
+            top: 217px;
+            margin: 20px;
+
+        }
+        .one{
+            left: 923px ;
+        }
+        .three{
+            right: 923px;
+        }
+        .line{
+            
+            width:2px;
+            height: 80px;
+            border: 2px solid black;
+            background-color: black;
+            z-index: 0;
+            
+        }
+        .r{
+            position: relative;
+            top: -100px;
+            left: 455px;
+            box-sizing: border-box;
+            /* border: 2px solid green; */
+            width: 120px;
+        }
+        .ring{
+            width: 120px;
+            height: 20px;
+            background-color: rgb(59, 46, 3);
+            border: 1px solid rgb(129, 93, 17);
+            border-radius: 30px;
+            margin: auto;
+            position: relative;
+            box-sizing: border-box;
+            
+        }
+        .ring1{
+            width:110px ;
+        }
+        .ring2{
+            width:100px ;
+        }
+        .ring3{
+            width:90px ;
+        }
+        .ring4{
+            width:80px ;
+        }
+        .point{
+            width: 30px;
+            height: 30px;
+            margin: auto;
+            position: relative;
+            background-color: rgb(59, 46, 3);
+            /* border: 1px solid rgb(129, 93, 17); */
+            border-radius: 30px;
+            top: -10px;
+        }
+        .button{
+            background-color: grey;
+            padding: 12px;
+            box-sizing: border-box;
+            font-size: 20px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="bulb">
+            <div class="round one"></div>
+            <div class="line"></div>
+            <div class="round tow"></div>
+            <div class="line"></div>
+            <div class="round three"></div>
+            <div class="line"></div>
+        </div>
+        <div class="r">
+        <div class="ring ring1"></div>
+        <div class="ring ring2"></div>
+        <div class="ring ring3"></div>
+        <div class="ring ring4"></div>
+        <div class="point"></div>
+    </div>
+    </div>
+    
+</body>
+
+</html>

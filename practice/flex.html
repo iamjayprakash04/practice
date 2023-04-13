@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        *{margin: 0;
+        padding: 0;
+    }
+    header{
+        border: 50px dotted blue;
+        border-color:  red yellow blue green;
+        box-sizing: border-box;
+        border-radius:10px;
+    }
+    nav{
+        height: 10vh;
+        background-color: black;
+        color:white;
+        display: flex;
+        justify-content: flex-start
+    }
+    .logo{
+        margin: auto 2vw;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        /* justify-content: space-around; */
+        
+    }
+    ul li,a{
+        margin:auto 2vw;
+       
+        text-decoration: none;
+        margin: 1vw;
+        padding: 1vw;
+        
+    }
+    a{
+        border: 2px solid white;
+        color:white;
+        border-radius:10px;
+    }
+    
+    a:hover{
+        /* margin:auto 3vw; */
+        color:white;
+        background-color: black;
+        border-width: 5px;
+        border-radius: 50px;
+        border-color: blue red yellow green;
+        
+        
+        
+        
+    }
+    body{
+        background-color: grey;
+    }
+    main{
+        display: flex;
+        justify-content: space-between;
+    }
+    .div{
+        border: 20px solid blue ;
+        
+        border-color: blue red yellow green;
+        margin: 5px;
+        background-color: black;
+        width: 30vw;
+        height: 40vh;
+    }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><h1>&</h1></div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="div">box 1</div>
+        <div class="div">box 2</div>
+    </main>
+</body>
+</html>

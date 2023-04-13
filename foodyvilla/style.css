@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: black;
+
+}
+header::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    background-color: black;
+    height: 60px;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+header {
+    height: 60px;
+    /* background-color: rgba(77, 60, 60, 0.637); */
+    position: sticky;
+    background-color: white;
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    /* justify-content: flex-start; */
+}
+
+.logo {
+    margin: 12px 20px;
+}
+hr{
+    background-color:  black;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 12px 18px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+
+#main::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 90vh;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('img/mainbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main {
+    height: 90vh;
+    /* background-size: cover; */
+    background-position: 0px -160px;
+    /* background-color: orange; */
+    flex-direction: column;
+    position: relative;
+    border: 2px solid red;
+    color: white;
+}
+
+
+.content{
+    text-align: left;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.content h1{
+    color: black;
+    font-size: 4.8rem;
+}
+.content p{
+    color: black;
+    font-size: 2.8rem;
+    line-height: 100px;
+}
+.btn{
+    border: 2px solid white;
+    padding: 12px 15px;
+    background: transparent;
+    width: 300px;
+    color:white;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+#favfood{
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid blue;
+    background-color: white;
+}
