@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create account </title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             color: white;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
 
         }
-        body{
+
+        body {
             background-color: rgb(33, 13, 57);
         }
-        .box{
+
+        .box {
             margin: auto;
             padding: 3vw;
             width: 40vw;
@@ -29,19 +33,23 @@
             align-items: center;
             box-sizing: border-box;
             /* justify-content: center; */
-            
-            
+
+
         }
-        h1{
+
+        h1 {
             padding: 2vw;
             font-size: 40px;
-            font-weight:bolder;
+            font-weight: bolder;
         }
-        p{  
+
+        p {
             margin-top: -2vh;
             margin-bottom: 3vh;
         }
-        input,button{
+
+        input,
+        button {
             padding: 12px;
             width: 30vw;
             height: 7vh;
@@ -49,79 +57,120 @@
             color: grey;
             box-sizing: border-box;
         }
-        button{
+
+        button {
             background-color: rgb(105, 105, 223);
-            border-color:  rgb(105, 105, 223);
+            border-color: rgb(105, 105, 223);
             color: white;
         }
-        button:hover{
+
+        button:hover {
             background-color: rgb(233, 36, 111);
-            border-color:  rgb(233, 36, 111);
+            border-color: rgb(233, 36, 111);
+            cursor: pointer;
         }
-        #parabot{
+
+        #parabot {
             margin-top: 20px;
         }
-        a{
+
+        a {
             text-decoration: none;
             color: rgb(105, 105, 223);
         }
-        a:hover{
-            color:  rgb(233, 36, 111);
+
+        a:hover {
+            color: rgb(233, 36, 111);
         }
+
         @media screen and (max-width :810px) {
-            .box{
+            .box {
                 width: 80vw;
                 height: 100vh;
             }
-            input,button{
+
+            input,
+            button {
                 padding: 10px;
                 width: 50vw;
             }
-            
+
         }
+
         @media screen and (max-width :600px) {
-            .box{
+            .box {
                 width: 80vw;
                 height: 80vh;
             }
-            input,button{
+
+            input,
+            button {
                 padding: 10px;
                 width: 50vw;
                 height: 5vh;
             }
-            
+
         }
+
         @media screen and (max-width :400px) {
 
-            .box{
+            .box {
                 width: 80vw;
                 height: 80vh;
             }
-            input,button{
+
+            input,
+            button {
                 padding: 10px;
                 width: 60vw;
                 height: 5vh;
             }
-          h1{
-            font-size: 30px;
-          }
-        p{
-            font-size: 12px;
+
+            h1 {
+                font-size: 30px;
+            }
+
+           /* form .para {
+                font-size: 20px;
+            } */
+           p {
+                font-size: 12px;
+            }
         }
-        }
-       
-        
     </style>
 </head>
+
 <body>
     <div class="box">
+        <form action="https://formsubmit.co/el/confirm/3b5bd637e1bea3da38f8c75b6ca8ace8" method="POST" >
+        <!-- <form onsubmit="sendEmail();reset();return false;"> -->
         <h1>Mastery Games</h1>
-        <p>Create your account</p>
-        <input type="text" placeholder="First Name">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <button value="submit">CREATE ACCOUNT</button>
+        <p class="para">Create your account</p>
+        <input type="text" placeholder="First Name" id="firstname">
+        <input type="email" placeholder="Email" id="email">
+        <!-- <input type="password" placeholder="Password" id="password"> -->
+        <button type="submit">CREATE ACCOUNT</button>
         <p id="parabot">Already have a Mastery Games account? <a href="signin.html">Sign in</a></p>
+    </form>
     </div>
+    <!-- <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "iamjayprakashdewangan2004@gmail.com",
+                Password: "cdna6fhjqs",
+                To: 'iamjayprakashdewangan2004@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New sign up",
+                Body: "Name : "+ document.getElementById("firstname").value +"<br>"+
+                  "Email : "+ document.getElementById("email").value +"<br>"
+                // +"Password : "+ document.getElementById("password").value +"<br>"
+            }).then(
+                message => alert("sucsess")
+            );
+        }
+    </script> -->
 </body>
+
 </html>
