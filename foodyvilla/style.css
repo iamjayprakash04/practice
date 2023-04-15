@@ -1,17 +1,18 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* overflow: hidden scroll; */
-    
+
 }
+
 body {
     /* background: black; */
     width: 100vw;
     margin: 0;
 
 }
+
 header::before {
     content: "";
     position: absolute;
@@ -19,14 +20,14 @@ header::before {
     width: 100vw;
     height: 60px;
     z-index: -1;
-    background-color:black;
+    background-color: black;
     opacity: 0.8;
 }
 
 header {
     height: 60px;
-     /* background-color: rgb(78, 63, 63);  */
-   position: sticky;
+    /* background-color: rgb(78, 63, 63);  */
+    position: sticky;
     /* background-color: white; */
     top: 0px;
     z-index: 5;
@@ -34,25 +35,28 @@ header {
 
 nav {
     display: flex;
-     justify-content: flex-start; 
+    justify-content: flex-start;
 }
 
 .logo {
     margin: 12px 20px;
-    color :white;
+    color: white;
 }
+
 nav ul li {
     list-style: none;
     display: inline-block;
     margin: 12px 18px;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
-    transition: all 0.25s ease-in;}
+    transition: all 0.25s ease-in;
+}
 
 nav ul li a:hover {
-    
+
     color: red;
 }
 
@@ -73,14 +77,15 @@ nav ul li a:hover {
     height: 99vh;
     overflow-x: hidden;
     box-sizing: border-box;
-     background-size: cover; 
+    background-size: cover;
     /* background-position: 0px -160px; */
-     /* background-color: orange;  */
+    /* background-color: orange;  */
     flex-direction: column;
     position: relative;
     /* border: 2px solid red; */
     color: white;
 }
+
 #main::after {
     content: "";
     position: absolute;
@@ -95,45 +100,50 @@ nav ul li a:hover {
     background-repeat: no-repeat;
 }
 
-.content{
+.content {
     text-align: left;
     position: relative;
     top: 100px;
     left: 100px;
 }
-.content h1{
+
+.content h1 {
     /* color: black; */
     font-size: 4.8rem;
-    color:white;
+    color: white;
 }
-.content p{
+
+.content p {
     /* color: black; */
     font-size: 2.8rem;
     line-height: 100px;
-    color:white;
+    color: white;
 }
-.btn{
+
+.btn {
     border: 2px solid white;
     padding: 12px 15px;
     background: transparent;
     width: 300px;
-    color:white;
+    color: white;
     font-size: 15px;
     border-radius: 20px;
     /* color: black; */
 }
-.btn:hover{
+
+.btn:hover {
     background-color: white;
-    transition: all 0.5s ease-out ;
+    transition: all 0.5s ease-out;
+    color: black;
 }
 
- #favfood{
-    width:100%;
+#favfood {
+    width: 100%;
     height: 80vh;
     /* border: 2px solid blue; */
     position: relative;
     top: 0vh;
-    background-position:center;
+    background-position: center;
     background-color: white;
     /* display: flex; */
     /* justify-content: space-around; */
@@ -144,23 +154,25 @@ nav ul li a:hover {
 
 }
 
-#favfood h1{
+#favfood h1 {
     position: relative;
     top: 10vh;
     text-align: center;
     /* left: 40vw; */
     font-size: 3.8rem;
-    text-decoration:underline;
-  
+    text-decoration: underline;
+
 
 }
-#favfood .container{
+
+#favfood .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
-#favfood .box{
+
+#favfood .box {
     margin: 80px auto;
     display: block;
     border: 2px solid black;
@@ -168,77 +180,231 @@ nav ul li a:hover {
     height: 350px;
     width: 400px;
     border-radius: 23px;
-    
+
 }
-#favfood .box img{
+
+#favfood .box img {
     display: block;
-    margin:10px auto;
+    margin: 10px auto;
     width: 200px;
     height: 200px;
     border-radius: 23px;
 
 }
 
-#favfood .box h3{
+#favfood .box h3 {
     margin: 20px auto;
-} 
-.order{
+}
+
+.order {
     border: 2px solid white;
     padding: 12px 15px;
     background: rgb(190, 42, 42);
     width: 200px;
-    color:white;
+    color: white;
     font-size: 10px;
     border-radius: 20px;
     color: black;
 }
-.order:hover{
+
+.order:hover {
     background-color: white;
     border: 2px solid rgb(190, 42, 42);
-    transition: all 0.5s ease-out ;
+    transition: all 0.5s ease-out;
 }
-footer{
+
+footer {
     height: 21vh;
     /* border: 2px solid red; */
     background-color: rgb(17, 15, 15);
-    color: white ;
+    color: white;
     box-sizing: border-box;
-  
+
 
     /* padding: auto; */
 }
-#contacts{
+
+#contacts {
     width: 50vw;
     /* border: 2px solid blue; */
     display: block;
     margin: auto;
 }
-#contacts img{
+
+#contacts img {
     display: inline-block;
     margin: 20px 30px;
     width: 60px;
-    
+
 }
-#yt{
+
+#yt {
     width: 80px;
 }
 
 /* utility classes */
-.center{
+.center {
     text-align: center;
 }
 
 @media screen and (max-width:1260px) {
 
-    #favfood .box{
+    #favfood .box {
         width: 330px;
+        margin-top: 150px;
     }
-    #favfood .box img{
+
+    #favfood .box img {
         width: 200px;
-        height:200px;
+        height: 200px;
     }
-    footer #contacts{
-        margin: auto;
+
+    footer #contacts {
+        /* display: block; */
+        /* border: 2px solid red; */
+        margin: 20px 135px;
         width: 80vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #contacts img {
+        /* display: inline-block; */
+        /* margin: 30px 60px; */
+        width: 50px;
+
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    #favfood .box {
+        width: 330px;
+        margin: 150px 10px 0px 10px;
+    }
+
+    #favfood .box img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width:920px) {
+
+    .content h1 {
+        font-size: 3rem;
+    }
+    .content p {
+        /* color: black; */
+        font-size: 1.8rem;
+        line-height: 70px;
+    }
+    .btn {
+        padding: 12px 10px;
+        width: 200px;
+        font-size: 15px;
+    }
+    footer #contacts {
+        margin: 20px 98px;
+    }
+}
+@media screen and (max-width:680px) {
+    header::before,header{
+        height: 120px;
+    }
+    #favfood .container {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        align-items: center;
+    }
+    #favfood h1{
+        top: 3vh;
+    }
+    #favfood .box {
+        width: 459px;
+        height: 430px;
+        margin: 40px auto;
+    }
+    #favfood .box img {
+        width: 250px;
+        height: 250px;
+    }
+    footer {position: relative;
+        bottom: -820px;
+        padding: auto;
+    }
+    
+    #contacts {
+position: relative;
+left: -46px;
+    }
+    
+    #contacts img {
+        width: 40px;
+        margin: 10px;
+    
+    }
+    
+}
+@media screen and (max-width:550px) {
+    .content {
+        top: 200px;
+        left: 60px;
+    }
+    .content h1 {
+        font-size: 2.5rem;
+    }
+    .content p {
+        /* color: black; */
+        font-size: 1.5rem;
+        line-height: 70px;
+    }
+   
+}
+@media screen and (max-width:470px) {
+    /* *{
+        overflow: scroll;
+    } */
+    .content {
+       
+        left: 30px;
+    }
+    .content h1 {
+        font-size: 2rem;
+    }
+    .content p {
+        font-size: 1.3rem;
+        line-height: 50px;
+    }
+    .btn {
+        width: 150px;
+    }
+    #favfood .box {
+        width: 300px;
+        height: 400px;
+        margin: 20px auto;
+    }
+    #favfood .box img {
+        width: 250px;
+        height: 250px;
+    }
+  footer{
+    bottom: -900px;
+    
+  }
+    #contacts img {
+                width: 30px;
+                margin: 10px;
+            
+            }
+}
+@media screen and (max-width:360px) {
+
+     header::before,header{
+        height: 180px;
     }
 }
